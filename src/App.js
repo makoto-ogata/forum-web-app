@@ -1,7 +1,7 @@
 import { createMuiTheme, CssBaseline } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
 import React from 'react';
-//import Header from './components/Header';
+import Header from './components/Header';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import PageHome from './components/PageHome';
 import PageThread from './components/PageThread';
@@ -14,6 +14,7 @@ const App =()=> {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <BrowserRouter>
+        <Header />
         <Switch>
           <Route exact path={'/'} >
             <PageHome />
