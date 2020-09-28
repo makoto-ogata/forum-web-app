@@ -2,10 +2,10 @@ import { Card, CardContent, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import React from 'react';
 
-const CardResponse =({ thread })=> {
+const CardResponse =({ index, response })=> {
   const classes =useStyles();
 
-  const dateText = response.createAt.toDate().toLocaleString();
+  const dateText = response.createdAt.toDate().toLocaleString();
 
   return (
     <Card>
